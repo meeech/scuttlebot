@@ -84,7 +84,7 @@ if (argv[0] == 'server') {
     if(err) {
       if (/could not connect/.test(err.message)) {
         console.log('Error: Could not connect to the scuttlebot server.')
-        console.log('Use the "server" command to start it.')
+        console.log('Use "sbot server" command to start.')
         if(config.verbose) throw err
         process.exit(1)
       }
